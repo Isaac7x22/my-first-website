@@ -22,7 +22,10 @@
 
   <body>
     <!-- Navbar gets added here -->
-    <div id="nav-placeholder"></div>
+    <div
+      id="nav-placeholder"
+      class="position-absolute top-0 start-0 w-100"
+    ></div>
     <!-- Web page content goes inside Bootstrap container(s) -->
 
     <script>
@@ -30,25 +33,23 @@
       $("#nav-placeholder").load("navbar.html #site-nav");
     </script>
 
-    <!--CARDS START HERE-->
-    <div class="container my-4">
-      <div class="row align-items-center g-4">
-        <div class="col-md4">
-          <img
-            src="images/placerimage1.jpg"
-            class="img-fluid rounded"
-            alt="This is an image of Isaac Castillo"
-          />
-        </div>
-        <div class="col-md-8">
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-        </div>
+    <!--BACKGROUND IMAGE STARTS HERE-->
+    <section
+      class="min-vh-100 bg-black text-white d-flex align-items-end"
+      style="
+        background-image: url(images/placerimage1.jpg);
+        background-size: cover;
+        background-position: right center;
+      "
+    >
+      <div class="container pb-5">
+        <h1 class="display-1 fw-bold">Isaac Castillo</h1>
+        <p class="lead">Web Developer</p>
       </div>
-    </div>
+    </section>
+    <!--BACKGROUND IMAGE ENDS HERE-->
 
+    <!--CARDS START HERE-->
     <div class="card-group">
       <div class="card">
         <img src="images/placerimage1.jpg" class="card-img-top" alt="..." />
@@ -91,5 +92,6 @@
         </div>
       </div>
     </div>
+    <!--CARD ENDS HERE-->
   </body>
 </html>
