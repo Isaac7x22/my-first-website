@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <!-- HEAD STARTS HERE-->
   <head>
     <title>My First Website</title>
@@ -21,6 +21,7 @@
   <!--HEAD ENDS HERE-->
 
   <body>
+    <body class="bg-black text-white"></body>
     <!-- Navbar gets added here -->
     <div
       id="nav-placeholder"
@@ -37,61 +38,97 @@
     <section
       class="min-vh-100 bg-black text-white d-flex align-items-end"
       style="
-        background-image: url(images/placerimage1.jpg);
+        background-image: url(images/homepagebgphoto.jpeg);
         background-size: cover;
         background-position: right center;
       "
     >
       <div class="container pb-5">
         <h1 class="display-1 fw-bold">Isaac Castillo</h1>
-        <p class="lead">Web Developer</p>
+        <p class="lead">Future Cybersecurity Specialist</p>
       </div>
     </section>
     <!--BACKGROUND IMAGE ENDS HERE-->
 
     <!--CARDS START HERE-->
-    <div class="card-group">
-      <div class="card">
-        <img src="images/placerimage1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
+    <section class="min-vh-100 d-flex align-items-center py-5">
+      <div class="container">
+        <div class="card-group">
+          <!--LEFT CARD STARTS HERE-->
+          <div class="card">
+            <img
+              src="images/cybersecurity_logo.jpeg"
+              class="card-img-top"
+              alt="Cybersecurity logo that depicts a lock inside a shield with a wireless signal in the background"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cybersecurity</h5>
+              <p class="card-text">
+                As a future cybersecurity specialist, I am passionate about
+                protecting digital assets and ensuring the integrity of
+                information systems. My goal is to develop innovative solutions
+                to combat cyber threats and enhance security measures across
+                various platforms.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"></small>
+              </p>
+            </div>
+          </div>
+          <!--LEFT CARD ENDS HERE-->
+
+          <!--MIDDLE CARD STARTS HERE-->
+          <div class="card">
+            <img
+              src="images/physicalsecurity_logo.jpeg"
+              class="card-img-top"
+              alt="Physical Security logo depicting a star above a castle inside a badge icon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Physical Security</h5>
+              <p class="card-text">
+                In addition to my develpment in cybersecurity, I also have a
+                strong background in physical security. With 5 1/2 years of
+                experience in law enforcement, I was trained in multple aspects
+                of physical security along with threat prevention. I believe
+                that a comprehensive security strategy should encompass both
+                digital and physical aspects, ensuring the safety of individuals
+                and assets in various environments.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"></small>
+              </p>
+            </div>
+          </div>
+          <!--MIDDLE CARD ENDS HERE-->
+
+          <!--RIGHT CARD STARTS HERE-->
+          <div class="card">
+            <img
+              src="images/coding_logo.jpeg"
+              class="card-img-top"
+              alt="Coding logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coding</h5>
+              <p class="card-text">
+                As a developing coder, I am constantly impoving my programming
+                skills and exploring new coding languages. This website was
+                built from scratch using HTML, CSS, and Bootstrap framework.
+                Prior to August 2026, I had no background with coding at all.
+                This website shows my dedication to learning a new skill and how
+                fast I can learn and apply skills to real world projects in a
+                short amount of time.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"></small>
+              </p>
+            </div>
+          </div>
+          <!--RIGHT CARD ENDS HERE-->
         </div>
       </div>
-      <div class="card">
-        <img src="images/placerimage1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/placerimage1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--CARD ENDS HERE-->
+    </section>
+    <!--CARDS ENDS HERE-->
   </body>
 </html>
