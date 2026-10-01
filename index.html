@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <!-- HEAD STARTS HERE-->
+  <head>
+    <title>My First Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Using Bootstrap 5 framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery used to load the navbar -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <!--HEAD ENDS HERE-->
+
+    <body class="bg-black text-white"></body>
+    <!-- Navbar gets added here -->
+    <div
+      id="nav-placeholder"
+      class="position-absolute top-0 start-0 w-100"
+    ></div>
+    <!-- Web page content goes inside Bootstrap container(s) -->
+
+    <script>
+      // Load only the #site-nav element from navbar.html
+      $("#nav-placeholder").load("navbar.html #site-nav");
+    </script>
+
+
+    <!--BACKGROUND IMAGE STARTS HERE-->
+    <section
+      class="min-vh-100 bg-black text-white d-flex align-items-end"
+      style="
+        background-image: url(images/homepagebgphoto.jpeg);
+        background-size: cover;
+        background-position: right center;
+      "
+    >
+      <div class="container pb-5">
+        <h1 class="display-1 fw-bold">Isaac Castillo</h1>
+        <p class="lead">Future Cybersecurity Specialist</p>
+      </div>
+    </section>
+    <!--BACKGROUND IMAGE ENDS HERE-->
+
+    <!--CARDS START HERE-->
+    <section class="min-vh-100 d-flex align-items-center py-5">
+      <div class="container">
+        <div class="card-group">
+          <!--LEFT CARD STARTS HERE-->
+          <div class="card">
+            <img
+              src="images/cybersecurity_logo.jpeg"
+              class="card-img-top"
+              alt="Cybersecurity logo that depicts a lock inside a shield with a wireless signal in the background"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Cybersecurity</h2>
+              <p class="card-text">
+                As a future cybersecurity specialist, I am passionate about
+                protecting digital assets and ensuring the integrity of
+                information systems. My goal is to develop innovative solutions
+                to combat cyber threats and enhance security measures across
+                various platforms.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"></small>
+              </p>
+              <a
+                href="https://www.msudenver.edu/criminal-justice-criminology/cybersecurity-bs/"
+                target="_blank"
+                class="btn btn-primary"
+                >My Cybersecurity Program</a
+              >
+            </div>
+          </div>
+          <!--LEFT CARD ENDS HERE-->
+
+          <!--MIDDLE CARD STARTS HERE-->
+          <div class="card">
+            <img
+              src="images/physicalsecurity_logo.jpeg"
+              class="card-img-top"
+              alt="Physical Security logo depicting a star above a castle inside a badge icon"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Physical Security</h2>
+              <p class="card-text">
+                In addition to my develpment in cybersecurity, I also have a
+                strong background in physical security. With 5 1/2 years of
+                experience in law enforcement, I was trained in multple aspects
+                of physical security along with threat prevention. I believe
+                that a comprehensive security strategy should encompass both
+                digital and physical aspects, ensuring the safety of individuals
+                and assets in various environments.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"></small>
+              </p>
+              <a
+                href="https://www.rrcc.edu/academic-programs/law-enforcement-academy"
+                target="_blank"
+                class="btn btn-primary"
+                >Law Enforcement Program</a
+              >
+            </div>
+          </div>
+          <!--MIDDLE CARD ENDS HERE-->
+
+          <!--RIGHT CARD STARTS HERE-->
+          <div class="card">
+            <img
+              src="images/coding_logo.jpeg"
+              class="card-img-top"
+              alt="Coding logo"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Coding</h2>
+              <p class="card-text">
+                As a developing coder, I am constantly impoving my programming
+                skills and exploring new coding languages. This website was
+                built from scratch using HTML, CSS, and Bootstrap framework.
+                Prior to August 2026, I had no background with coding at all.
+                This website shows my dedication to learning a new skill and how
+                fast I can learn and apply skills to real world projects in a
+                short amount of time.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"></small>
+              </p>
+              <a
+                href="https://getbootstrap.com/"
+                class="btn btn-primary"
+                target="_blank"
+                >Bootstrap instructions</a
+              >
+            </div>
+          </div>
+          <!--RIGHT CARD ENDS HERE-->
+        </div>
+      </div>
+    </section>
+    <!--CARDS ENDS HERE-->
+  </body>
+</html>
